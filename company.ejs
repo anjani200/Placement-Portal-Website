@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Company</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0e1117;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #4a90e2;
+    }
+
+    .company-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .company-card {
+      background-color: #1a1e28;
+      border: 2px solid #2e3a59;
+      border-radius: 16px;
+      padding: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(74, 144, 226, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .company-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .company-card span {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .company-card:hover {
+      background-color: #222939;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #4a90e2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Select the Company Name</h1>
+    <div class="company-grid">
+      <a href="/company/google" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" />
+        <span>Google</span>
+      </a>
+      <a href="/company/microsoft" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft Logo" />
+        <span>Microsoft</span>
+      </a>
+      <a href="/company/amazon" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" />
+        <span>Amazon</span>
+      </a>
+      <a href="/company/ibm" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" />
+        <span>IBM</span>
+      </a>
+      <a href="/company/samsung" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung Logo" />
+        <span>Samsung</span>
+      </a>
+      <a href="/company/dell" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell Logo" />
+        <span>Dell</span>
+      </a>
+      <a href="/company/infosys" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Infosys_logo.svg" alt="Infosys Logo" />
+        <span>Infosys</span>
+      </a>
+      <a href="/company/accenture" class="company-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Accenture.svg" alt="Accenture Logo" />
+        <span>Accenture</span>
+      </a>
+      <a href="/company/sumtotal" class="company-card">
+        <img src="https://seeklogo.com/images/S/sumtotal-logo-267FCFBD18-seeklogo.com.png" alt="SumTotal Logo" />
+        <span>SumTotal</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1{
+    color : #ede5d1;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+body{
+    background :url('https://i.pinimg.com/originals/1e/ef/c5/1eefc5567dc5c55f67ef6849b9235582.jpg');
+}
+
+
+img{
+    width : 22%;
+    height : 250px;
+    margin : 1% 1%;
+}
